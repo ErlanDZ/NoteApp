@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".onBoard.ThirdFragment">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lotti_3"
+        android:layout_marginTop="107dp"
+        android:layout_centerHorizontal="true"
+        app:lottie_rawRes="@raw/ojnbawd"
+        android:elevation="5dp"
+        app:lottie_repeatCount="1"
+        app:lottie_autoPlay="true"
+        android:layout_width="287dp"
+        android:layout_height="264dp"/>
+
+    <TextView
+        android:id="@+id/txt_title_3"
+        android:layout_below="@id/lotti_3"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/functional2"
+        android:textColor="@color/white1"
+        android:paddingStart="15dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:layout_width="226dp"
+        android:layout_height="24dp"/>
+
+    <TextView
+        android:id="@+id/txt_skip1"
+        android:layout_below="@id/txt_title_3"
+        android:layout_marginTop="42dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/go"
+        android:textColor="@color/grey5"
+        android:textSize="@dimen/textSize16"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_width="130dp"
+        android:layout_height="24dp"/>
+
+</RelativeLayout>

@@ -33,4 +33,13 @@
         tools:layout="@layout/fragment_note" >
 
     </fragment>
+    <fragment
+        android:id="@+id/onBoardFragment"
+        android:name="com.example.noteapp.onBoard.OnBoardFragment"
+        android:label="fragment_on_board"
+        tools:layout="@layout/fragment_on_board" >
+        <action
+            android:id="@+id/action_onBoardFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
 </navigation>

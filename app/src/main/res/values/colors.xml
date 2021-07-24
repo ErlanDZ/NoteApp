@@ -7,12 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#131010</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="black1">#000000</color>
+    <color name="black1">#131010</color>
     <color name="grey">#B1B1B1</color>
     <color name="gold">#D88B02</color>
     <color name="figma">#1C8181</color>
     <color name="grey1">#B1B1B1</color>
     <color name="grey4">#505050</color>
     <color name="black2">#191818</color>
+    <color name="black3">#211B1B</color>
+    <color name="toolBar">#131212</color>
+    <color name="white1">#F3F3F3</color>
+    <color name="grey5">#8E8B8B</color>
 
 </resources>

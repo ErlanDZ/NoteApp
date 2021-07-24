@@ -8,6 +8,7 @@ public class NoteModel implements Serializable {
     public NoteModel(String title) {
         this.title = title;
     }
+    public NoteModel(){}
 
     public String getTitle() {
         return title;

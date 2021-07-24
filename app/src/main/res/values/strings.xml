@@ -9,7 +9,7 @@
     <string name="menu_home">Поделиться</string>
     <string name="menu_gallery">Настройки</string>
     <string name="menu_slideshow">Slideshow</string>
-    <string name="severelectro">www.severelectro.kg
+    <string name="severelectro">Джаркынбек уулу Эрлан
 </string>
     <string name="se">ОАО "Северэлектро"</string>
     <string name="supportr">SUPPORT</string>
@@ -20,5 +20,12 @@
     <string name="ready">Готово</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Skip">Пропустить</string>
+    <string name="functional">Очень удобный функционал</string>
+    <string name="functional2">Куча функций и интересных фишек</string>
+    <string name="product">Быстрый, качественный продукт</string>
+    <string name="go">Начать работу</string>
+    <string name="title_dialog">ВНИМАНИЕ</string>
+    <string name="message">ТОЧНО УДАЛИТЬ????</string>
 
 </resources>
