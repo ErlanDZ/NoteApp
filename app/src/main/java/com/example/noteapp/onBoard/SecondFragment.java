@@ -16,16 +16,17 @@ import com.example.noteapp.preference.PreferenceHelper;
 
 
 public class SecondFragment extends Fragment {
- FragmentSecondBinding binding;
+    FragmentSecondBinding binding;
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        binding = FragmentSecondBinding.inflate(getLayoutInflater(),container,false);
+        binding = FragmentSecondBinding.inflate(getLayoutInflater(), container, false);
         skip_viewpager_second();
         return binding.getRoot();
     }
+
     private void skip_viewpager_second() {
         binding.txtSkip2.setOnClickListener(v -> {
             PreferenceHelper sPrerf = new PreferenceHelper();

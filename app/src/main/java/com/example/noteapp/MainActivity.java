@@ -1,13 +1,9 @@
 package com.example.noteapp;
 
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.util.Base64;
 import android.view.View;
 import android.view.Menu;
@@ -15,15 +11,11 @@ import android.widget.ImageView;
 
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.Priority;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.request.RequestOptions;
 import com.example.noteapp.preference.PreferenceHelper;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -32,9 +24,7 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.noteapp.databinding.ActivityMainBinding;
-
-import java.io.ByteArrayInputStream;
+import com.example.noteapp.databinding.ActivityMainBinding;;
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
@@ -71,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
-          preferenceHelper = new PreferenceHelper();
+        preferenceHelper = new PreferenceHelper();
         preferenceHelper.init(this);
         if (!preferenceHelper.isShown()) {
             navController.navigate(R.id.onBoardFragment);

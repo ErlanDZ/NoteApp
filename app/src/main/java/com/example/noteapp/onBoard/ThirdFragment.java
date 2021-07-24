@@ -11,8 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.noteapp.R;
-import com.example.noteapp.databinding.FragmentFirstBinding;
-import com.example.noteapp.databinding.FragmentOnBoardBinding;
 import com.example.noteapp.databinding.FragmentThirdBinding;
 import com.example.noteapp.preference.PreferenceHelper;
 
@@ -20,13 +18,10 @@ public class ThirdFragment extends Fragment {
     FragmentThirdBinding binding;
 
 
-
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        binding = FragmentThirdBinding.inflate(getLayoutInflater(),container,false);
+        binding = FragmentThirdBinding.inflate(getLayoutInflater(), container, false);
         skip_viewpager();
         return binding.getRoot();
     }

@@ -2,8 +2,6 @@ package com.example.noteapp.onBoard;
 
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -16,10 +14,8 @@ import com.example.noteapp.R;
 import com.example.noteapp.databinding.FragmentFirstBinding;
 import com.example.noteapp.preference.PreferenceHelper;
 
-import org.jetbrains.annotations.NotNull;
-
 public class FirstFragment extends Fragment {
-      FragmentFirstBinding binding;
+    FragmentFirstBinding binding;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -29,6 +25,7 @@ public class FirstFragment extends Fragment {
         return binding.getRoot();
 
     }
+
     private void skip_viewpager_first() {
         binding.txtSkip.setOnClickListener(v -> {
             PreferenceHelper sPrerf = new PreferenceHelper();

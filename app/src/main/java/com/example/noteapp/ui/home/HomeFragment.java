@@ -3,13 +3,11 @@ package com.example.noteapp.ui.home;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -21,7 +19,9 @@ import com.example.noteapp.R;
 import com.example.noteapp.databinding.FragmentHomeBinding;
 import com.example.noteapp.ui.note.NoteAdapter;
 import com.example.noteapp.ui.note.NoteModel;
+
 import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,8 +32,7 @@ public class HomeFragment extends Fragment {
     HomeViewModel homeViewModel;
     private FragmentHomeBinding binding;
     NoteModel model;
-    public static boolean isChange =  true;
-
+    public static boolean isChange = true;
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -68,9 +67,11 @@ public class HomeFragment extends Fragment {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
             }
+
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
             }
+
             @Override
             public void afterTextChanged(Editable s) {
                 filter(s.toString());
@@ -81,13 +82,15 @@ public class HomeFragment extends Fragment {
     private void setupRecycler() {
         binding.recyclerViewHomeFragment.setAdapter(adapter);
     }
+
     @Override
     public void onCreate(@Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
     }
+
     @Override
-    public boolean onOptionsItemSelected(MenuItem item)  {
+    public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_settings) {
             if (isChange) {
                 item.setIcon(R.drawable.ic_baseline_list_24);
@@ -109,6 +112,7 @@ public class HomeFragment extends Fragment {
             adapter.addTask(model);
         });
     }
+
     @Override
     public void onDestroyView() {
         super.onDestroyView();
