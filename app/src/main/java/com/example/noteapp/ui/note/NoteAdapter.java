@@ -3,6 +3,7 @@ package com.example.noteapp.ui.note;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -29,6 +30,11 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.ViewHolder> {
 
     public void updateList(List<NoteModel> list1) {
         list = list1;
+        notifyDataSetChanged();
+    }
+    public  void SetList (List<NoteModel> noteModel){
+        list.clear();
+        this.list.addAll(noteModel);
         notifyDataSetChanged();
     }
 

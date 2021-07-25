@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.example.noteapp.R;
 import com.example.noteapp.databinding.FragmentHomeBinding;
+import com.example.noteapp.room.App;
 import com.example.noteapp.ui.note.NoteAdapter;
 import com.example.noteapp.ui.note.NoteModel;
 
@@ -108,8 +109,12 @@ public class HomeFragment extends Fragment {
     private void getFragmentData() {
         getParentFragmentManager().setFragmentResultListener("title", getViewLifecycleOwner(), (requestKey, result) -> {
             model = (NoteModel) result.getSerializable("model");
-            models.add(model);
             adapter.addTask(model);
+        });
+
+        App.getInstance().dao().getAll().observe(requireActivity(),noteModels -> {
+            adapter.SetList(noteModels);
+            models = noteModels;
         });
     }
 

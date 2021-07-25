@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 
 import com.example.noteapp.R;
 import com.example.noteapp.databinding.FragmentNoteBinding;
+import com.example.noteapp.room.App;
 
 public class NoteFragment extends Fragment {
 
@@ -44,8 +45,10 @@ public class NoteFragment extends Fragment {
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("model", noteModel);
                 getParentFragmentManager().setFragmentResult("title", bundle);
+                App.getInstance().dao().insertTask(new NoteModel(binding.etNote.getText().toString()));
                 navController.navigateUp();
             }
         });
+        binding.etNote.setText("");
     }
 }
