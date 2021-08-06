@@ -11,6 +11,8 @@ import android.widget.ImageView;
 
 
 import com.bumptech.glide.Glide;
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.example.noteapp.preference.PreferenceHelper;
 import com.google.android.material.navigation.NavigationView;
 

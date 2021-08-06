@@ -19,10 +19,20 @@ public class NoteModel implements Serializable {
     private int id;
 
 
-    String title;
+    String title, date;
 
-    public NoteModel(String title) {
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public NoteModel(String title, String date) {
         this.title = title;
+        this.date = date;
+
     }
 
     public String getTitle() {

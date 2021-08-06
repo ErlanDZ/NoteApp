@@ -17,7 +17,7 @@ public class PreferenceHelper {
     }
 
     public boolean isShown() {
-        return sp.getBoolean("onBoard", false);
+         return sp.getBoolean("onBoard", false);
     }
 
     public void onSaveImage() {

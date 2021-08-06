@@ -23,6 +23,7 @@ public class OnBoardAdapter extends FragmentStateAdapter {
         switch (position) {
             case 0:
                 fragment = new FirstFragment();
+
                 break;
             case 1:
                 fragment = new SecondFragment();

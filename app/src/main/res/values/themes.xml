@@ -17,9 +17,19 @@
     <style name="Theme.NoteApp.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="colorOnSecondary">@color/grey1</item>
+        <item name="android:colorControlNormal">@color/grey1</item>
     </style>
 
-    <style name="Theme.NoteApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.NoteApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="color">@color/grey1</item>
+        <item name="android:colorControlNormal">@color/grey1</item>
+        <item name="colorOnSecondary">@color/grey1</item>
+        <item name="colorAccent">@color/grey1</item>
+        <item name="colorControlActivated">@color/grey1</item>
+        <item name="android:colorForeground">@color/grey1</item>
+        <item name="android:textColorPrimary">@color/grey1</item>
+    </style>
 
     <style name="Theme.NoteApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

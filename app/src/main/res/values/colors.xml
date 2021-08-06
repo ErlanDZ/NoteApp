@@ -18,5 +18,7 @@
     <color name="toolBar">#131212</color>
     <color name="white1">#F3F3F3</color>
     <color name="grey5">#8E8B8B</color>
+    <color name="white_btn">#EBE4C9</color>
+    <color name="crimson">#571818</color>
 
 </resources>

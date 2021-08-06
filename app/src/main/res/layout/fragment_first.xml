@@ -7,26 +7,12 @@
     android:background="@color/black2"
     tools:context=".onBoard.FirstFragment">
 
-    <TextView
-        android:id="@+id/txt_skip"
-        android:layout_width="93dp"
-        android:layout_height="23dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="19dp"
-        android:text="@string/Skip"
-        android:textColor="@color/gold"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lotti_1"
-        android:layout_width="287dp"
-        android:layout_height="264dp"
+        android:layout_width="@dimen/Size287"
+        android:layout_height="@dimen/Size264"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="107dp"
         android:autofillHints="@string/functional"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
@@ -36,13 +22,13 @@
 
 
     <TextView
-        android:layout_width="226dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="40dp"
-        android:paddingStart="15dp"
+        android:layout_width="@dimen/Size226"
+        android:layout_height="@dimen/Size24"
+        android:layout_marginTop="@dimen/Size40"
+        android:textAlignment="center"
         android:text="@string/functional"
         android:textColor="@color/white1"
-        android:textSize="16sp"
+        android:textSize="@dimen/textSize16"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/lotti_1" />

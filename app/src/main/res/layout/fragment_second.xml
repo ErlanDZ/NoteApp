@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,36 +7,29 @@
     android:background="@color/black2"
     tools:context=".onBoard.SecondFragment">
 
-    <TextView
-        android:id="@+id/txt_skip_2"
-        android:layout_width="93dp"
-        android:layout_height="23dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="19dp"
-        android:text="@string/Skip"
-        android:textColor="@color/gold"
-        android:textSize="15sp" />
+
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lotti_2"
-        android:layout_width="287dp"
-        android:layout_height="264dp"
+        android:layout_width="@dimen/Size287"
+        android:layout_height="@dimen/Size264"
         app:lottie_rawRes="@raw/first_onboarding"
-        android:layout_below="@id/txt_skip_2"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="59dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:lottie_autoPlay="true"
         app:lottie_loop="true" />
 
         <TextView
             android:layout_below="@id/lotti_2"
-            android:layout_marginTop="40dp"
-            android:layout_centerHorizontal="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lotti_2"
+            android:layout_marginTop="@dimen/Size40"
             android:text="@string/product"
             android:textColor="@color/white1"
-            android:paddingStart="15dp"
-            android:textSize="16sp"
+            android:textAlignment="center"
+            android:textSize="@dimen/Size16"
             android:layout_width="wrap_content"
-            android:layout_height="24dp"/>
-</RelativeLayout>
+            android:layout_height="@dimen/Size24"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
